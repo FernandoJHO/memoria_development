@@ -14,3 +14,4 @@ if a >= b:
 if a/b <= 30:
     sumas = (a**2+b**2)
 print sumas
+jdjdjd
