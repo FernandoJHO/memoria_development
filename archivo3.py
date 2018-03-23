@@ -1,16 +1,69 @@
-##Introducir dos valores A y B:
-###Si A>=B, calcular e imprimir la suma 10+14+18+...+50 
-###Si A/B<=30, calcular e imprimir el valor de (A^2+B^2)
-a = input('Primer valor: \n')
-b = input('Segundo valor: \n')
-n = 10
-suma = 0
-sumas = 0
-if a >= b:
-    while n <= 50:
-        suma += n
-        n += 4
-    print suma
-if a/b <= 30:
-    sumas = (a**2+b**2)
-print sumas
+def Menu():
+
+    """Funcion que Muestra el Menu"""
+
+    print """************
+
+Calculadora
+
+************
+
+Menu
+
+1) Suma
+
+2) Resta
+
+3) Multiplicacion
+
+4) Division
+
+5) Salir"""
+
+def Calculadora():
+
+    """Funcion Para Calcular Operaciones Aritmeticas"""
+
+    Menu()
+
+    opc = int(input("Selecione Opcion\n"))
+
+    while (opc >0 and opc <5):
+
+        x = int(input("Ingrese Numero\n"))
+
+        y = int(input("Ingrese Otro Numero\n"))
+
+        if (opc==1):
+
+            print "La Suma es:", x+y
+
+            opc = int(input("Selecione Opcion\n"))
+
+        elif(opc==2):
+
+            print "La Resta es:",x-y
+
+            opc = int(input("Selecione Opcion\n"))
+
+        elif(opc==3):
+
+            print "La Multiplicacion es:",x*y
+
+            opc = int(input("Selecione Opcion\n"))
+
+        elif(opc==4):
+
+            try:
+
+              print "La Division es:", x/y
+
+              opc = int(input("Selecione Opcion\n"))
+
+            except ZeroDivisionError:
+
+              print "No se Permite la Division Entre 0"
+
+              opc = int(input("Selecione Opcion\n"))
+
+Calculadora()
