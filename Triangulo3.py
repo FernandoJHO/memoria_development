@@ -13,4 +13,4 @@ while(x>a):
     a=a+1
     c=0
     b=a
-    print ""
+    print "a"
