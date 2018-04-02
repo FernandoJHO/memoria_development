@@ -25,4 +25,3 @@ num2 = int(input("Introduce el segundo numero: \n"))
  
 
 print "El máximo común divisor de ", num1," y ", num2," es ", mcd(num1, num2)
-print "hola"
