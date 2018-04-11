@@ -1,4 +1,3 @@
-
 x=input("valor: ")
 
 a=0
@@ -16,7 +15,4 @@ while(x>a):
     b=a
     print ""
     
-
-    
-
-    
+print "hola"
