@@ -1,6 +1,6 @@
 #prueba.py
 
-x = 1
+x = 10
 y = 2
 
 
