@@ -1,9 +1,10 @@
 #prueba.py
 
-x = 10
-y = 2
 
+def calcula(x):
+  y = x * 10
+  return y
 
-print x+y
+z = calcula(5)
 
-print "hola"
+print z
