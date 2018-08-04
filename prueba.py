@@ -8,5 +8,3 @@ def calcula(x):
 z = calcula(5)
 
 print z
-
-print "\n hola"
